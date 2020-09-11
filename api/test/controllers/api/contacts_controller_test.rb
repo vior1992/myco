@@ -6,31 +6,31 @@ class ContactsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get contacts_url, as: :json
+    get api_contacts_url, as: :json
     assert_response :success
   end
 
   test "should create contact" do
     assert_difference('Contact.count') do
-      post contacts_url, params: { contact: { email: @contact.email, first_name: @contact.first_name, last_name: @contact.last_name, phone_number: @contact.phone_number } }, as: :json
+      post api_contacts_url, params: { contact: { email: 'test@test.com', first_name: @contact.first_name, last_name: @contact.last_name, phone_number: '+ 00 00 01' } }, as: :json
     end
 
     assert_response 201
   end
 
   test "should show contact" do
-    get contact_url(@contact), as: :json
+    get api_contact_url(@contact), as: :json
     assert_response :success
   end
 
   test "should update contact" do
-    patch contact_url(@contact), params: { contact: { email: @contact.email, first_name: @contact.first_name, last_name: @contact.last_name, phone_number: @contact.phone_number } }, as: :json
+    patch api_contact_url(@contact), params: { contact: { email: 'test@edited.com', first_name: @contact.first_name, last_name: @contact.last_name, phone_number: '+ 00 00 02' } }, as: :json
     assert_response 200
   end
 
   test "should destroy contact" do
     assert_difference('Contact.count', -1) do
-      delete contact_url(@contact), as: :json
+      delete api_contact_url(@contact), as: :json
     end
 
     assert_response 204
