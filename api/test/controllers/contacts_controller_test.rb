@@ -12,7 +12,7 @@ class ContactsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create contact" do
     assert_difference('Contact.count') do
-      post contacts_url, params: { contact: {  } }, as: :json
+      post contacts_url, params: { contact: { email: @contact.email, first_name: @contact.first_name, last_name: @contact.last_name, phone_number: @contact.phone_number } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class ContactsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update contact" do
-    patch contact_url(@contact), params: { contact: {  } }, as: :json
+    patch contact_url(@contact), params: { contact: { email: @contact.email, first_name: @contact.first_name, last_name: @contact.last_name, phone_number: @contact.phone_number } }, as: :json
     assert_response 200
   end
 
