@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component should render without throwing an error & match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdnylx VtiVB"
+  >
+    <div
+      class="sc-gtssRu kJYrlK"
+    >
+      <h1>
+        MYCO
+        <span
+          aria-label="monkey"
+          role="img"
+        >
+          🐒
+        </span>
+      </h1>
+      <h2>
+        My Contact List
+      </h2>
+    </div>
+    <a
+      class="sc-dlnjPT bdksBB"
+      href="/contacts"
+    >
+      New Contact
+    </a>
+    <div
+      class="sc-hKFyIo jetHVG"
+    />
+  </div>
+</DocumentFragment>
+`;

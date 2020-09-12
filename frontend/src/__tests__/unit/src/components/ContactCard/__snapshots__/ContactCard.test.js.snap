@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactCard component should render without throwing an error & match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdnylx ewFKio"
+  >
+    <div
+      class="sc-gtssRu innTCK"
+    >
+      <div>
+        <p>
+          First name:
+        </p>
+        <span>
+          Ragnar
+        </span>
+      </div>
+      <div>
+        <p>
+          Last name:
+        </p>
+        <span>
+          Lodbrok
+        </span>
+      </div>
+      <div>
+        <p>
+          Email:
+        </p>
+        <span>
+          vikings@mocked.com
+        </span>
+      </div>
+      <div>
+        <p>
+          Phone number:
+        </p>
+        <span>
+          + 00 00 01
+        </span>
+      </div>
+    </div>
+    <div
+      class="sc-dlnjPT edhKxb"
+    >
+      <a
+        href="/contacts/1"
+      >
+        <i
+          class="far fa-edit"
+        />
+      </a>
+      <i
+        class="far fa-trash-alt"
+        data-testid="delete-icon"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
