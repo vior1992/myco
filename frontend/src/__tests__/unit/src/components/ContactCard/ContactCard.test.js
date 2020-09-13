@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { render, fireEvent } from '@testing-library/react';
 import ContactCard from '../../../../../components/ContactCard';
-import { MOCKED_CONTACTS } from '../../../../../constants';
+import { MOCKED_CONTACTS } from '../../../../constants';
 import { getComponentWrapper } from '../../../../../utils/test';
 
 const onClickDeleteContact = jest.fn();

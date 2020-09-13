@@ -6,8 +6,8 @@ export const StyledContactsFactoryWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   font-family: 'Architects Daughter', cursive;
-  margin: 10px;
-  padding: 10px;
+  margin: ${(props) => props.theme.sizes['x-small']};
+  padding: ${(props) => props.theme.sizes['x-small']};
 `;
 
 export const StyledTitlesWrapper = styled.div`
@@ -17,17 +17,30 @@ export const StyledTitlesWrapper = styled.div`
   h2 {
     margin: 0;
   }
+
+  @media (min-width: 420px) {
+    h1 {
+      font-size: ${(props) => props.theme.sizes['x-huge']};
+    }
+
+    h2 {
+      font-size: ${(props) => props.theme.sizes['xx-large']};
+    }
+  }
 `;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  padding: 5px;
+  padding: ${(props) => props.theme.sizes['x-small']};
   margin: 15px 0;
-  border-radius: 10px;
-  font-weight: 600;
+  border-radius: ${(props) => props.theme.sizes['x-small']};
   border: ${(props) => `2px solid ${props.theme.colors.darkGreen}`};
   color: ${(props) => props.theme.colors.darkGreen};
-  background-color: ${(props) => props.theme.colors.green};
+  font-size: ${(props) => props.theme.sizes['xx-large']};
+
+  @media (min-width: 420px) {
+    font-size: ${(props) => props.theme.sizes['xx-huge']};
+  }
 `;
 
 export const StyledContactList = styled.div`
