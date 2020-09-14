@@ -17,7 +17,7 @@ import {
 } from '../../constants';
 
 const { ADD_ICON, EDIT_ICON } = CONTACT_PAGE_ICONS;
-const { ADD, EDIT } = CONTACT_PAGE_TITLES;
+const { ADD_TITLE, EDIT_TITLE } = CONTACT_PAGE_TITLES;
 
 const ContactPage = () => {
   const [contactData, setContactData] = useState(INITIAL_CONTACT_DATA);
@@ -27,7 +27,7 @@ const ContactPage = () => {
 
   const [, id = ''] = history.location.pathname.split(CONTACTS_PATH);
   const submitIconClass = `fas fa-${id ? EDIT_ICON : ADD_ICON}`;
-  const pageTitle = id ? EDIT : ADD;
+  const pageTitle = id ? EDIT_TITLE : ADD_TITLE;
 
   useEffect(() => {
     if (id) {

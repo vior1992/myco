@@ -1,61 +1,33 @@
 import styled from 'styled-components';
 
-// TODO
 export const StyledCardWrapper = styled.div`
-  display: flex;
-  font-family: 'Play', sans-serif;
-  justify-content: space-around;
-  border: 2px solid black;
+  width: 200px;
+  font-family: ${(props) => props.theme.fontFamily.card};
+  margin: ${(props) => props.theme.sizes.medium} 0px;
+  padding: ${(props) => props.theme.sizes.small};
   border-radius: ${(props) => props.theme.sizes['x-small']};
-  margin: ${(props) => props.theme.sizes['x-small']};
-  padding: ${(props) => props.theme.sizes['x-small']};
-  width: 100%;
-  background-color: #efeeee;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.darkBlue};
+  box-shadow: ${(props) => props.theme.boxShadow.card};
+  transition: ${(props) => props.theme.transitions.fast};
 
   :hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: ${(props) => props.theme.boxShadow['card-hover']};
   }
 
   @media (min-width: 420px) {
     width: 400px;
-    flex-direction: column;
+    margin: 10px 10px;
   }
 `;
 
 export const StyledInfoWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 200px;
-
-  // flex-wrap: wrap;
-  // word-break: break-all;
-
-  // justify-content: space-between;
-  // align-items: center;
-
-  div {
-    overflow-wrap: break-word;
-    margin: ${(props) => props.theme.sizes.small} 0;
-    max-width: none;
-  }
-
   p {
-    font-size: ${(props) => props.theme.sizes.small};
-    font-weight: ${(props) => props.theme.fontSizes.large};
-    margin: 0;
-  }
-
-  span {
-    color: #444444;
+    margin: 15px 0 5px 0;
+    border-bottom: 1px solid white;
   }
 
   @media (min-width: 420px) {
-    text-align: center;
-    align-self: center;
-
     p {
       font-size: ${(props) => props.theme.sizes['x-large']};
     }
@@ -68,14 +40,13 @@ export const StyledInfoWrapper = styled.div`
 
 export const StyledButtonsWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0 5px;
+  justify-content: center;
   font-size: ${(props) => props.theme.sizes.large};
+  margin-top: ${(props) => props.theme.sizes.medium};
 
   i {
     cursor: pointer;
-    padding: 5px;
+    margin: 0px ${(props) => props.theme.sizes['x-large']};
     font-weight: ${(props) => props.theme.fontSizes.large};
     color: ${(props) => props.theme.colors.blue};
   }
@@ -85,8 +56,8 @@ export const StyledButtonsWrapper = styled.div`
   }
 
   @media (min-width: 420px) {
-    margin-top: ${(props) => props.theme.sizes['x-small']};
     flex-direction: row;
+    margin-top: ${(props) => props.theme.sizes['x-small']};
 
     i {
       font-size: ${(props) => props.theme.sizes['xx-huge']};

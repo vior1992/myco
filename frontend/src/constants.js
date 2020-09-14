@@ -1,13 +1,13 @@
 const CONTACTS_PATH = '/contacts/';
 
 const CONTACT_PAGE_ICONS = {
-  ADD_ICON: 'address-card',
-  EDIT_ICON: 'user-plus',
+  ADD_ICON: 'user-plus',
+  EDIT_ICON: 'address-card',
 };
 
 const CONTACT_PAGE_TITLES = {
-  ADD: 'ADD CONTACT',
-  EDIT: 'EDIT CONTACT',
+  ADD_TITLE: 'ADD CONTACT',
+  EDIT_TITLE: 'EDIT CONTACT',
 };
 
 const INITIAL_CONTACT_DATA = {

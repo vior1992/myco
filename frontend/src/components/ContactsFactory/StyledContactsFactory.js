@@ -5,7 +5,6 @@ export const StyledContactsFactoryWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Architects Daughter', cursive;
   margin: ${(props) => props.theme.sizes['x-small']};
   padding: ${(props) => props.theme.sizes['x-small']};
 `;
@@ -32,10 +31,10 @@ export const StyledTitlesWrapper = styled.div`
 export const StyledLink = styled(Link)`
   text-decoration: none;
   padding: ${(props) => props.theme.sizes['x-small']};
-  margin: 15px 0;
+  margin: ${(props) => props.theme.sizes.small} 0;
   border-radius: ${(props) => props.theme.sizes['x-small']};
-  border: ${(props) => `2px solid ${props.theme.colors.darkGreen}`};
-  color: ${(props) => props.theme.colors.darkGreen};
+  border: ${(props) => `2px solid ${props.theme.colors.green}`};
+  color: ${(props) => props.theme.colors.green};
   font-size: ${(props) => props.theme.sizes['xx-large']};
 
   @media (min-width: 420px) {

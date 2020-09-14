@@ -4,9 +4,10 @@ import { ThemeProvider } from 'styled-components';
 
 const theme = {
   colors: {
-    green: '#A9F7BC',
-    darkGreen: '#336600',
+    white: '#FFFFFF',
+    green: '#5DAD00',
     blue: '#2D9EF7',
+    darkBlue: '#0B1325',
     red: '#F50D0D',
   },
   fontSizes: {
@@ -24,6 +25,16 @@ const theme = {
     'x-huge': '45px',
     'xx-huge': '50px',
   },
+  fontFamily: {
+    card: 'Play, sans-serif',
+  },
+  boxShadow: {
+    card: '0 4px 8px 0px rgba(0, 0, 0, 0.2)',
+    'card-hover': '0 8px 16px 0 rgba(0, 0, 0, 0.2)',
+  },
+  transitions: {
+    fast: '0.3s',
+  },
 };
 
 const Theme = ({ children }) => (
@@ -31,7 +42,7 @@ const Theme = ({ children }) => (
 );
 
 Theme.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.array.isRequired,
 };
 
 export default Theme;

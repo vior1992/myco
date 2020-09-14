@@ -22,7 +22,7 @@ describe('ContactPage component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should display error message if on submit request params not fil validations', async () => {
+  it('should display error message if request params are not valid on submit', async () => {
     const expectedValue = 'mocked test error';
     window.fetch.mockResolvedValueOnce({
       status: 422,

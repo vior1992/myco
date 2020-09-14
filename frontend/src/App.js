@@ -1,15 +1,16 @@
 import React from 'react';
 import { ToastProvider } from 'react-toast-notifications';
 import Routes from './Routes';
-import { Theme } from './styles';
+import { GlobalStyles, Theme } from './styles';
 
 function App() {
   return (
-    <ToastProvider>
-      <Theme>
+    <Theme>
+      <GlobalStyles />
+      <ToastProvider>
         <Routes />
-      </Theme>
-    </ToastProvider>
+      </ToastProvider>
+    </Theme>
   );
 }
 
