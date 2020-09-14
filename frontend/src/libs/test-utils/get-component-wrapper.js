@@ -2,7 +2,7 @@ import React from 'react';
 import { ToastProvider } from 'react-toast-notifications';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
-import { Theme } from '../../styles';
+import { GlobalStyles, Theme } from '../../styles';
 
 const getComponentWrapper = ({
   Component,
@@ -12,13 +12,14 @@ const getComponentWrapper = ({
   const history = createMemoryHistory({ initialEntries: [initialRoute] });
 
   return (
-    <ToastProvider>
-      <Theme>
+    <Theme>
+      <GlobalStyles />
+      <ToastProvider>
         <Router history={history}>
           <Component {...mockedProps} />
         </Router>
-      </Theme>
-    </ToastProvider>
+      </ToastProvider>
+    </Theme>
   );
 };
 

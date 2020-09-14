@@ -1,14 +1,14 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import contactsRepository from './contactsRepository';
 import { MOCKED_CONTACTS, TOAST_SUCCESS_MESSAGES } from '../../constants';
 
-const { ADDED, DELETED, UPDATED } = TOAST_SUCCESS_MESSAGES;
+const { ADDED, DELETED } = TOAST_SUCCESS_MESSAGES;
 
 describe('contactsRepository', () => {
   beforeAll(() => jest.spyOn(window, 'fetch'));
 
   beforeEach(() => {
     fetch.mockClear();
+    mockedToast.mockClear();
   });
 
   const mockedToast = jest.fn();
@@ -94,7 +94,7 @@ describe('contactsRepository', () => {
       });
 
       expect(data).toEqual(true);
-      expect(mockedToast).toHaveBeenCalledWith(UPDATED, toastSuccessOptions);
+      expect(mockedToast).toHaveBeenCalledWith(ADDED, toastSuccessOptions);
     });
 
     it('should call setErrors mocked function and return false when error (status 422)', async () => {
