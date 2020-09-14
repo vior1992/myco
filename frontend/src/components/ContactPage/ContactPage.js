@@ -43,7 +43,7 @@ const ContactPage = () => {
 
       fetchData();
     }
-  }, [id]);
+  }, [id, addToast, history]);
 
   const handleOnChange = ({ target: { id, value } }) => {
     setContactData({ ...contactData, [id]: value });

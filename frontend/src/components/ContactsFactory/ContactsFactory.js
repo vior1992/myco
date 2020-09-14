@@ -22,7 +22,7 @@ const ContactsFactory = () => {
       setHasToRefetch(false);
     };
     fetchData();
-  }, [hasToRefetch]);
+  }, [hasToRefetch, addToast]);
 
   const handleDeleteContact = async (id) => {
     await contactsRepository.deleteContact({
