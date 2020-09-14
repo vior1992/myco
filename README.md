@@ -1,6 +1,6 @@
 # MYCO 🐒
 
-\*_Myco is a word formed by My & CO(ntacts), is a play on words that in Catalan means monkey_ 🐵
+\*_Myco is a word formed by My & CO(ntacts), is a pun that in Catalan means monkey_ 🐵
 
 ## My Contact List project
 
