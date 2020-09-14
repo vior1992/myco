@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactPage component should render without throwing an error & match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdnylx gIRSRn"
+  >
+    <h1>
+      ADD CONTACT
+    </h1>
+    <form
+      class="sc-gtssRu RgjDD"
+    >
+      <div
+        class="sc-dlnjPT hJEuJX"
+      >
+        <label
+          for="first_name"
+        >
+          First name
+        </label>
+        <input
+          id="first_name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="sc-dlnjPT hJEuJX"
+      >
+        <label
+          for="last_name"
+        >
+          Last name
+        </label>
+        <input
+          id="last_name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="sc-dlnjPT hJEuJX"
+      >
+        <label
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          id="email"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="sc-dlnjPT hJEuJX"
+      >
+        <label
+          for="phone_number"
+        >
+          Phone number
+        </label>
+        <input
+          id="phone_number"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <a
+          href="/"
+        >
+          <i
+            class="fas fa-arrow-left"
+          />
+        </a>
+        <button
+          type="submit"
+        >
+          <i
+            class="fas fa-address-card"
+          />
+        </button>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;

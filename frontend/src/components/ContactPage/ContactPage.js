@@ -7,7 +7,7 @@ import {
   StyledInputWrapper,
 } from './StyledContactPage';
 import { contactsRepository } from '../../repositories';
-import { buildRequestOptions } from '../../utils';
+import { buildRequestOptions } from '../../libs/utils';
 import {
   CONTACTS_PATH,
   CONTACT_PAGE_ICONS,

@@ -1,4 +1,4 @@
-import { REQUEST_HEADERS, REQUEST_METHODS } from '../constants';
+import { REQUEST_HEADERS, REQUEST_METHODS } from '../../constants';
 
 const { PATCH, POST } = REQUEST_METHODS;
 

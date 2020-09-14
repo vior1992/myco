@@ -1,14 +1,16 @@
-import '@testing-library/jest-dom';
 import { render, fireEvent } from '@testing-library/react';
-import ContactCard from '../../../../../components/ContactCard';
-import { MOCKED_CONTACTS } from '../../../../constants';
-import { getComponentWrapper } from '../../../../../utils/test';
+import ContactCard from './ContactCard';
+import { MOCKED_CONTACTS } from '../../constants';
+import { getComponentWrapper } from '../../libs/test-utils';
 
 const onClickDeleteContact = jest.fn();
 
 const setup = () => {
   const mockedProps = { ...MOCKED_CONTACTS[0], onClickDeleteContact };
-  const wrappedComponent = getComponentWrapper(ContactCard, mockedProps);
+  const wrappedComponent = getComponentWrapper({
+    Component: ContactCard,
+    mockedProps,
+  });
   const _render = render(wrappedComponent);
   return { ..._render };
 };

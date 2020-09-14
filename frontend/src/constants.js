@@ -43,6 +43,25 @@ const TOAST_SUCCESS_MESSAGES = {
   UPDATED: `Contact updated successfully`,
 };
 
+// TESTS CONSTANTS
+
+const MOCKED_CONTACTS = [
+  {
+    id: 1,
+    first_name: 'Ragnar',
+    last_name: 'Lodbrok',
+    email: 'vikings@mocked.com',
+    phone_number: '+ 00 00 01',
+  },
+  {
+    id: 2,
+    first_name: 'Björn',
+    last_name: 'Ironside',
+    email: 'vikings@mocked.com',
+    phone_number: '+ 00 00 02',
+  },
+];
+
 export {
   CONTACTS_PATH,
   CONTACT_PAGE_ICONS,
@@ -53,4 +72,5 @@ export {
   REQUEST_METHODS,
   TOAST_APPEARANCE,
   TOAST_SUCCESS_MESSAGES,
+  MOCKED_CONTACTS,
 };

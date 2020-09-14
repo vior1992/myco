@@ -2,7 +2,7 @@ import {
   CONTACTS_PATH,
   TOAST_APPEARANCE,
   TOAST_SUCCESS_MESSAGES,
-} from '../constants';
+} from '../../constants';
 
 const { ERROR, SUCCESS } = TOAST_APPEARANCE;
 const { ADDED, DELETED, UPDATED } = TOAST_SUCCESS_MESSAGES;

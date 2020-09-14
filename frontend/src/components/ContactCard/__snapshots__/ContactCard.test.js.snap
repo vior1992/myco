@@ -3,10 +3,10 @@
 exports[`ContactCard component should render without throwing an error & match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx ewFKio"
+    class="sc-bdnylx dkVhVL"
   >
     <div
-      class="sc-gtssRu innTCK"
+      class="sc-gtssRu jhNZOx"
     >
       <div>
         <p>
@@ -42,7 +42,7 @@ exports[`ContactCard component should render without throwing an error & match s
       </div>
     </div>
     <div
-      class="sc-dlnjPT edhKxb"
+      class="sc-dlnjPT grsXFH"
     >
       <a
         href="/contacts/1"
