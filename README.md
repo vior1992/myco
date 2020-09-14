@@ -62,13 +62,19 @@ git clone git@github.com:vior1992/myco.git
    rails db:migrate
    ```
 
-3. **Run the api server:**
+3. **Add predefined seed (optional):**
+
+   ```
+   rails db:seed
+   ```
+
+4. **Run the api server:**
 
    ```
    rails s
    ```
 
-4. **If you want to restart the DB with fresh seed:**
+5. **If you want to restart the DB with fresh seed:**
    ```
    rails db:reset db:migrate
    ```
@@ -93,7 +99,7 @@ git clone git@github.com:vior1992/myco.git
    npm run start
    ```
 
-4. **If you want to delete \***node\*modules\*\*\* folder and \_**package-lock.json**\* file and do clean install:\*\*
+4. **If you want to delete _node_modules_ folder and _package-lock.json_ file and do clean install:**
    ```
    npm run setup
    ```
