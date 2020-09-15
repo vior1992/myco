@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContactsFactory component should render without throwing an error & match snapshot 1`] = `
+exports[`ContactsListPage component should render without throwing an error & match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx cIcKWz"
+    class="sc-bdnylx hRUlCE"
   >
     <div
-      class="sc-gtssRu fayHPY"
+      class="sc-gtssRu bLovyb"
     >
       <h1>
         MYCO
@@ -22,7 +22,7 @@ exports[`ContactsFactory component should render without throwing an error & mat
       </h2>
     </div>
     <a
-      class="sc-dlnjPT dKWrYQ"
+      class="sc-dlnjPT hGMcqv"
       href="/contacts"
     >
       <i

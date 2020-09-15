@@ -3,10 +3,10 @@
 exports[`App component should render without throwing an error & match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx cIcKWz"
+    class="sc-hKFyIo fXuDfT"
   >
     <div
-      class="sc-gtssRu fayHPY"
+      class="sc-eCApGN ifqaSl"
     >
       <h1>
         MYCO
@@ -22,7 +22,7 @@ exports[`App component should render without throwing an error & match snapshot 
       </h2>
     </div>
     <a
-      class="sc-dlnjPT dKWrYQ"
+      class="sc-jSFkmK keYswx"
       href="/contacts"
     >
       <i
@@ -30,7 +30,7 @@ exports[`App component should render without throwing an error & match snapshot 
       />
     </a>
     <div
-      class="sc-hKFyIo jetHVG"
+      class="sc-gKAblj gDysJt"
     />
   </div>
 </DocumentFragment>

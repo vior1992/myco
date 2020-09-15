@@ -1,15 +1,15 @@
 import { render, act, screen, fireEvent } from '@testing-library/react';
-import ContactsFactory from './ContactsFactory';
+import ContactsListPage from './ContactsListPage';
 import { MOCKED_CONTACTS } from '../../constants';
 import { getComponentWrapper } from '../../libs/test-utils';
 
 const setup = () => {
-  const wrappedComponent = getComponentWrapper({ Component: ContactsFactory });
+  const wrappedComponent = getComponentWrapper({ Component: ContactsListPage });
   const _render = render(wrappedComponent);
   return { ..._render };
 };
 
-describe('ContactsFactory component', () => {
+describe('ContactsListPage component', () => {
   beforeAll(() => jest.spyOn(window, 'fetch'));
 
   beforeEach(() => {

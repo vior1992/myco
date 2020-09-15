@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const StyledContactsFactoryWrapper = styled.div`
+export const StyledContactsListPageWrapper = styled.div`
   ${({ theme: { sizes } }) => `
   display: flex;
   flex-direction: column;

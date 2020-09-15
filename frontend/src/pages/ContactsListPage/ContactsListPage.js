@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useToasts } from 'react-toast-notifications';
 import {
-  StyledContactsFactoryWrapper,
+  StyledContactsListPageWrapper,
   StyledTitlesWrapper,
   StyledLink,
   StyledContactList,
-} from './StyledContactsFactory';
-import ContactCard from '../ContactCard';
+} from './StyledContactsListPage';
+import { ContactCard } from '../../components';
 import { contactsRepository } from '../../repositories';
 
-const ContactsFactory = () => {
+const ContactsListPage = () => {
   const [contacts, setContacts] = useState([]);
   const [hasToRefetch, setHasToRefetch] = useState(false);
   const { addToast } = useToasts();
@@ -34,7 +34,7 @@ const ContactsFactory = () => {
   };
 
   return (
-    <StyledContactsFactoryWrapper>
+    <StyledContactsListPageWrapper>
       <StyledTitlesWrapper>
         <h1>
           MYCO
@@ -56,8 +56,8 @@ const ContactsFactory = () => {
           />
         ))}
       </StyledContactList>
-    </StyledContactsFactoryWrapper>
+    </StyledContactsListPageWrapper>
   );
 };
 
-export default ContactsFactory;
+export default ContactsListPage;

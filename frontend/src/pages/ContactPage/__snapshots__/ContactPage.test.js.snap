@@ -3,16 +3,16 @@
 exports[`ContactPage component should render without throwing an error & match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx iFJVhQ"
+    class="sc-bdnylx TfrPI"
   >
     <h1>
       ADD CONTACT
     </h1>
     <form
-      class="sc-gtssRu WGoOk"
+      class="sc-gtssRu JQQcR"
     >
       <div
-        class="sc-dlnjPT cCFnob"
+        class="sc-dlnjPT lmbTrz"
       >
         <label
           for="first_name"
@@ -26,7 +26,7 @@ exports[`ContactPage component should render without throwing an error & match s
         />
       </div>
       <div
-        class="sc-dlnjPT cCFnob"
+        class="sc-dlnjPT lmbTrz"
       >
         <label
           for="last_name"
@@ -40,7 +40,7 @@ exports[`ContactPage component should render without throwing an error & match s
         />
       </div>
       <div
-        class="sc-dlnjPT cCFnob"
+        class="sc-dlnjPT lmbTrz"
       >
         <label
           for="email"
@@ -54,7 +54,7 @@ exports[`ContactPage component should render without throwing an error & match s
         />
       </div>
       <div
-        class="sc-dlnjPT cCFnob"
+        class="sc-dlnjPT lmbTrz"
       >
         <label
           for="phone_number"

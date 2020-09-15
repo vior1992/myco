@@ -5,14 +5,13 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import ContactsFactory from './components/ContactsFactory';
-import ContactPage from './components/ContactPage';
+import { ContactsListPage, ContactPage } from './pages';
 
 const Routes = () => (
   <Router>
     <Switch>
       <Route exact path="/">
-        <ContactsFactory />
+        <ContactsListPage />
       </Route>
       <Route exact path="/contacts">
         <ContactPage />
