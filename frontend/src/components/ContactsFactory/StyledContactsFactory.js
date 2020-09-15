@@ -2,14 +2,17 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const StyledContactsFactoryWrapper = styled.div`
+  ${({ theme: { sizes } }) => `
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: ${(props) => props.theme.sizes['x-small']};
-  padding: ${(props) => props.theme.sizes['x-small']};
+  margin: ${sizes['x-small']};
+  padding: ${sizes['x-small']};
+`}
 `;
 
 export const StyledTitlesWrapper = styled.div`
+  ${({ theme: { sizes } }) => `
   text-align: center;
 
   h1,
@@ -19,27 +22,30 @@ export const StyledTitlesWrapper = styled.div`
 
   @media (min-width: 420px) {
     h1 {
-      font-size: ${(props) => props.theme.sizes['x-huge']};
+      font-size: ${sizes['x-huge']};
     }
 
     h2 {
-      font-size: ${(props) => props.theme.sizes['xx-large']};
+      font-size: ${sizes['xx-large']};
     }
   }
+`}
 `;
 
 export const StyledLink = styled(Link)`
+  ${({ theme: { colors, sizes } }) => `
   text-decoration: none;
-  padding: ${(props) => props.theme.sizes['x-small']};
-  margin: ${(props) => props.theme.sizes.small} 0;
-  border-radius: ${(props) => props.theme.sizes['x-small']};
-  border: ${(props) => `2px solid ${props.theme.colors.green}`};
-  color: ${(props) => props.theme.colors.green};
-  font-size: ${(props) => props.theme.sizes['xx-large']};
+  padding: ${sizes['x-small']};
+  margin: ${sizes.small} 0;
+  border-radius: ${sizes['x-small']};
+  border: ${`2px solid ${colors.green}`};
+  color: ${colors.green};
+  font-size: ${sizes['xx-large']};
 
   @media (min-width: 420px) {
-    font-size: ${(props) => props.theme.sizes['xx-huge']};
+    font-size: ${sizes['xx-huge']};
   }
+`}
 `;
 
 export const StyledContactList = styled.div`

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledContactPageWrapper = styled.div`
+  ${({ theme: { sizes } }) => `
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,36 +10,38 @@ export const StyledContactPageWrapper = styled.div`
 
   @media (min-width: 420px) {
     h1 {
-      font-size: ${(props) => props.theme.sizes['xx-huge']};
+      font-size: ${sizes['xx-huge']};
     }
   }
+`}
 `;
 
 export const StyledForm = styled.form`
+  ${({ theme: { boxShadow, colors, fontFamily, sizes, transitions } }) => `
   justify-content: space-around;
-  padding: ${(props) => props.theme.sizes.small};
-  margin: ${(props) => props.theme.sizes['x-small']};
-  font-family: ${(props) => props.theme.fontFamily.card};
-  background-color: ${(props) => props.theme.colors.darkBlue};
-  border-radius: ${(props) => props.theme.sizes['x-small']};
-  box-shadow: ${(props) => props.theme.boxShadow.card};
-  transition: ${(props) => props.theme.transitions.fast};
+  padding: ${sizes.small};
+  margin: ${sizes['x-small']};
+  font-family: ${fontFamily.card};
+  background-color: ${colors.darkBlue};
+  border-radius: ${sizes['x-small']};
+  box-shadow: ${boxShadow.card};
+  transition: ${transitions.fast};
 
   :hover {
-    box-shadow: ${(props) => props.theme.boxShadow['card-hover']};
+    box-shadow: ${boxShadow['card-hover']};
   }
 
   i {
     cursor: pointer;
-    font-size: ${(props) => props.theme.sizes['x-large']};
-    color: ${(props) => props.theme.colors.white};
-    margin: ${(props) => props.theme.sizes.medium};
-    padding: ${(props) => props.theme.sizes.medium};
+    font-size: ${sizes['x-large']};
+    color: ${colors.white};
+    margin: ${sizes.medium};
+    padding: ${sizes.medium};
   }
 
   i:hover {
-    transition: ${(props) => props.theme.transitions.fast};
-    color: ${(props) => props.theme.colors.blue};
+    transition: ${transitions.fast};
+    color: ${colors.blue};
   }
 
   button {
@@ -47,8 +50,8 @@ export const StyledForm = styled.form`
     padding: 0;
 
     i:hover {
-      transition: ${(props) => props.theme.transitions.fast};
-      color: ${(props) => props.theme.colors.green};
+      transition: ${transitions.fast};
+      color: ${colors.green};
     }
   }
 
@@ -56,45 +59,48 @@ export const StyledForm = styled.form`
     width: 500px;
     min-height: 500px;
     align-self: center;
-    font-size: ${(props) => props.theme.sizes['x-large']};
-    padding: ${(props) => props.theme.sizes['x-large']};
+    font-size: ${sizes['x-large']};
+    padding: ${sizes['x-large']};
 
     i {
-      font-size: ${(props) => props.theme.sizes['xx-huge']};
+      font-size: ${sizes['xx-huge']};
     }
   }
+`}
 `;
 
 export const StyledInputWrapper = styled.div`
+  ${({ theme: { colors, sizes } }) => `
   display: flex;
   flex-direction: column;
-  margin: ${(props) => props.theme.sizes['x-small']} 0;
+  margin: ${sizes['x-small']} 0;
 
   label {
-    color: ${(props) => props.theme.colors.white};
+    color: ${colors.white};
     text-align: start;
-    margin: ${(props) => props.theme.sizes['x-small']} 0;
+    margin: ${sizes['x-small']} 0;
   }
 
   input {
     border: 0;
     background-color: transparent;
     border-bottom: 1px solid white;
-    color: ${(props) => props.theme.colors.white};
+    color: ${colors.white};
   }
 
   p {
-    color: ${(props) => props.theme.colors.red};
-    font-size: ${(props) => props.theme.sizes.small};
+    color: ${colors.red};
+    font-size: ${sizes.small};
   }
 
   @media (min-width: 420px) {
     input {
-      font-size: ${(props) => props.theme.sizes.large};
+      font-size: ${sizes.large};
     }
 
     p {
-      font-size: ${(props) => props.theme.sizes.medium};
+      font-size: ${sizes.medium};
     }
   }
+`}
 `;
